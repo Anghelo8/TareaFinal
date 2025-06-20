@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flask + Tailwind CSS</title>
+  <!-- Tailwind CSS compilado localmente -->
+  <link href="/static/css/tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-100 min-h-screen flex items-center justify-center px-4">
+
+  <!-- Tarjeta principal -->
+  <div class="max-w-lg w-full bg-white shadow-xl rounded-2xl p-8 text-center transform transition duration-300 hover:shadow-2xl">
+
+    <!-- Icono divertido -->
+    <div class="mb-6">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16 mx-auto text-indigo-500 animate-bounce">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+          d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    </div>
+
+    <!-- Título -->
+    <h1 class="text-3xl font-extrabold text-gray-900 mb-4">¡Hola! 👋</h1>
+    <p class="text-lg text-gray-700 mb-6">
+      Esta es mi aplicación Flask con <span class="font-semibold text-pink-600">Tailwind CSS</span> y conexión a una base de datos remota en <span class="font-semibold text-blue-600">AWS RDS</span>.
+    </p>
+
+    <!-- Botón interactivo -->
+    <button id="test-btn"
+            class="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-purple-600 hover:to-pink-500 text-white font-medium rounded-lg shadow-md transition duration-300 transform hover:scale-105 focus:outline-none">
+      🧪 Probar conexión a la BD
+    </button>
+
+    <!-- Resultado dinámico -->
+    <div id="db-result" class="mt-6 text-left text-sm text-gray-600 space-y-2 hidden">
+      <p><strong>Estado:</strong> <span id="status" class="text-green-600">Conectado</span></p>
+      <p><strong>Versión de MySQL:</strong> <span id="version" class="font-mono">8.0.33</span></p>
+      <p id="message" class="text-green-500 mt-2">✅ ¡Conexión establecida correctamente!</p>
+    </div>
+
+    <!-- Enlace al archivo JS externo -->
+    <script src="/static/js/main.js"></script>
+
+    <!-- Footer -->
+    <footer class="mt-8 text-xs text-gray-400">
+      &copy; 2025 - Hecho con amor 💛 usando Flask, Tailwind CSS local y AWS RDS
+    </footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.log
+
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Entornos virtuales, IDEs, etc.
+# =========================
+.env
+*.env
+*.env.*
+*.secret
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Build / distribución
+# =========================
+dist/
+build/
+coverage/
+*.egg-info/
+.eggs/
+*.spec
+
+# =========================
+# Otros archivos temporales
+# =========================
+*.bak
+*.tmp
+*.orig
+*.backup
+
